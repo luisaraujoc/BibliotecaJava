@@ -28,12 +28,12 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        // carregar de `resources/com/biblioteca`
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/com/biblioteca/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }
-
+    
     public static void main(String[] args) {
         launch();
     }
-
 }

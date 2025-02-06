@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:controller="com.biblioteca.Controller.MenuController" maxHeight="1080.0" maxWidth="1920.0" minHeight="653.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1038.0" stylesheets="@Styles/MenuStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="720.0" maxWidth="1280.0" minHeight="653.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1038.0" styleClass="container" stylesheets="@Styles/MenuStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="app-bar" stylesheets="@Styles/MenuStyle.css">
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-max-width: 1920; -fx-min-width: 1280; -fx-pref-width: 100%;" styleClass="app-bar" stylesheets="@Styles/MenuStyle.css">
          <children>
             <Label layoutX="14.0" layoutY="15.0" styleClass="AppTitle" stylesheets="@Styles/MenuStyle.css" text="Gerenciador de Biblioteca">
             </Label>
@@ -17,13 +17,13 @@
       <!-- FlowPane para organizar os botões -->
       <FlowPane fx:id="buttonContainer" layoutY="53.0" prefHeight="669.0" prefWidth="1280.0" styleClass="button-container" stylesheets="@Styles/MenuStyle.css">
          <children>
-            <Button onAction="#realizarEmprestimo" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Realizar Empréstimos" />
-            <Button onAction="#historicoEmprestimo" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Histórico de Empréstimos" />
-            <Button onAction="#realizarDevolucao" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Realizar Devolução" />
-            <Button onAction="#GerenLeirores" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Leitores" />
-            <Button onAction="#GerenLivro" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Livros" />
-            <Button onAction="#GerenAutor" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Autores" />
-            <Button onAction="#VizuEstatisticas" styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Visualizar Estatísticas" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Realizar Empréstimos" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Histórico de Empréstimos" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Realizar Devolução" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Leitores" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Livros" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Gerenciar Autores" />
+            <Button styleClass="menu-button" stylesheets="@Styles/MenuStyle.css" text="Visualizar Estatísticas" />
          </children>
       </FlowPane>
    </children>
